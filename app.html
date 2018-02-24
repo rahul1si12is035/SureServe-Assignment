@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SureServe Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Claim Detail</h2>
+  <form>
+    <div class="form-group">
+      <label for="claim">Claim ID</label>
+      <input type="text" class="form-control" id="claim" placeholder="Claim ID should be a number" name="claim" value="">
+    </div>
+    <div class="form-group">
+      <label for="date">Date of Hospitalization</label>
+      <input type="date" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date" value="" datepicker-popup="dd/MM/yyyy" >
+    </div>
+    <button type="button" class="btn btn-primary" onclick="myFunction()">View</button>
+	<br/>
+	<br/>
+	<div>
+		<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Claim Id</th>
+        <th>Claim Amount</th>
+        <th>Hospital Name</th>
+        <th>Claim Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p id="claim id"></td>
+        <td><p id="claim amount"></td>
+        <td><p id="hospital name"></td>
+        <td><p id="claim status"></td>
+      </tr>
+    </tbody>
+  </table>
+	</div>
+  </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
